@@ -1,0 +1,94 @@
+h1,h2,h3,h4{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+div.caracteristica{
+    margin-bottom: 15px;
+    padding:15px 0; 
+    
+    
+}
+@keyframes start{
+    from{color:white;font-size: 2rem}
+    to{color: yellow;font-size: 4rem}
+}
+i.animacion{
+    animation-name: start;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+div.card-content{
+    overflow-y: scroll;
+}
+p.numero{
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3e5f5 ;
+    border-radius: 50%;
+}
+p.positivo{
+    color: #004d40;
+}
+ul.resultados{
+    height: 140px;
+}
+ol{
+    padding: 0;
+}
+
+.overflow{
+    overflow-y: scroll;
+    scrollbar-3dlight-color:#ffd700;
+    scrollbar-arrow-color:#ff0;
+    scrollbar-base-color:#ff6347;
+    scrollbar-darkshadow-color:#ffa500;
+    scrollbar-face-color:#008080;
+    scrollbar-highlight-color:#ff69b4;
+    scrollbar-shadow-color:#f0f
+
+}
+p.negativo{
+    color: #d50000 ;
+}
+img{
+height: 100%;
+}
+.inline_block{
+    display: inline-block;
+}
+div#resultado{
+    position: absolute;
+    top: -15%;
+    left: 0%;
+    display: flex;
+    width: 25%;
+    align-content: space-between; 
+    justify-content:space-around;
+}
+.caracteristica h3{
+    padding: 15px 5px;
+}
+div.subCaracteristica{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 13px;
+}
+p.texto{
+    position: absolute;
+    left: 50%;
+top: -110%;
+width: 100%;
+background: #bdbdbd;
+color: white;
+display: none;
+}

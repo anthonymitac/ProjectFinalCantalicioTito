@@ -1,0 +1,61 @@
+class jugador{
+-String nombre
++String apellido
++Objet puntuacion
++float puntuacion_total
+get()
+set()
+}
+class puntuacion{
++int cantidades_acertadas
++int cantidades_fallidas
+get()
+set()
+}
+class acceso{
+Objet acceso
+Objet jugador
+Objet puntuacion
+float puntuacion_total
+crear jugador(pumtB,pumtM):jugador
+instance jugador():jugador
+stableces puntuacion(pumB,pumM):void
+instance():acceso
+}
+jugador *-- puntuacion
+acceso *-- jugador
+acceso *-- puntuacion
+ 
+vista de procesos
+
+|jugador|
+start
+|#AntiqueWhite|app web|
+:log in;
+:jugar ;
+:optener puntuacion;
+|#Antiquewhite|jugador|
+:recibir resultado del juego;
+stop
+
+vista de desarrollo 
+
+component menu_game{
+folder login_jugador
+folder puntuacion 
+folder acceso
+}
+login_jugador --> acceso
+puntuacion --> acceso
+
+vista fisica 
+
+node server_web{
+component menu_game{
+component acceso
+component puntuacion
+}
+}
+node browser
+server_web--browser:htp 80
+ 
